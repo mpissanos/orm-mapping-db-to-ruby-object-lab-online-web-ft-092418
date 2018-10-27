@@ -63,6 +63,7 @@ class Student
       SQL
       
        DB[:conn].execute(sql).map do |row|
+         student if student.id == (1..num)
          
          binding.pry
          
