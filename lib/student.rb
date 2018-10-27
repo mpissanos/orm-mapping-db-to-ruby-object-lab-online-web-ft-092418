@@ -62,8 +62,7 @@ class Student
       WHERE students.grade = 10 
       SQL
       
-       DB[:conn].execute(sql).map do |row|
-         student if student.id == (1..num)
+       DB[:conn].execute(sql)[0..num - 1]
          
          binding.pry
          
