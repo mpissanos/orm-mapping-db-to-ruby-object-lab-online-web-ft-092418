@@ -71,7 +71,7 @@ class Student
       WHERE students.grade = 10 
       SQL
       
-      DB[:conn].execute(sql).first
+      DB[:conn].execute(sql)[0][0]
       binding.pry
     end
       
