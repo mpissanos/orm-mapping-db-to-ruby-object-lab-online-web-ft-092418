@@ -64,6 +64,8 @@ class Student
       
        DB[:conn].execute(sql).map do |row|
          
+         binding.pry
+         
        end
       end
     
