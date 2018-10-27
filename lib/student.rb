@@ -71,7 +71,8 @@ class Student
       WHERE students.grade = 10 
       SQL
       
-      DB[:conn].execute(sql)[0][0]
+      row = DB[:conn].execute(sql)[0]
+        self.new_from_db(row)
      end
       
     
