@@ -67,7 +67,6 @@ class Student
          binding.pry
          
        end
-      end
     
       
   
