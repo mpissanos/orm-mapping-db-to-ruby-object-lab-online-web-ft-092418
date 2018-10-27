@@ -74,6 +74,8 @@ class Student
       row = DB[:conn].execute(sql)[0]
         self.new_from_db(row)
      end
+     
+     def self.
       
     
       
